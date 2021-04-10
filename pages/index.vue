@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div>
+    <!-- <div>
       <Logo />
       <h1 class="title box">
         nuxtdemo1
@@ -23,12 +23,11 @@
           GitHub
         </a>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
-import env from '../env' // 环境配置文件
 export default {
   layout:'default',
   created(){
