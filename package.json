@@ -1,0 +1,25 @@
+{
+  "name": "nuxtdemo1",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev nuxt dev",
+    "test": "cross-env NODE_ENV=test nuxt test",
+    "uat": "cross-env NODE_ENV=uat nuxt uat",
+    "prod": "cross-env NODE_ENV=production nuxt build"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.1",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "core-js": "^3.9.1",
+    "element-ui": "^2.15.1",
+    "nuxt": "^2.15.3"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2",
+    "scss": "^0.2.4",
+    "scss-loader": "0.0.1"
+  }
+}
