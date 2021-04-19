@@ -58,7 +58,7 @@ export default {
   },
 
   env: {
-    baseUrl: env[process.env.NODE_ENV].BASE_API,
+    baseURL: env[process.env.NODE_ENV].BASE_API,
     NODE_ENV: env[process.env.NODE_ENV].NODE_ENV
   }
 }

@@ -1,8 +1,8 @@
 module.exports = {
   // dev环境
   dev: {
-    NODE_ENV: 'development',
-    BASE_API: 'http://api-eadmin-dev.haioupai.com'
+    NODE_ENV: 'dev',
+    BASE_API: 'https://ctms-dev.haioupai.com/'
   },
   // test环境
   test: {

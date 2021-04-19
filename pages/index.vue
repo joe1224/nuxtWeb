@@ -28,10 +28,18 @@
 </template>
 
 <script>
+import {GetUserProtocol} from '~/api/announce.js'
 export default {
   layout:'default',
   created(){
-    console.log(process.env.NODE_ENV)
+    console.log(process.env.baseURL)
+    this.getUserList()
+  },
+  methods:{
+    async getUserList(){
+        const {data} = await GetUserProtocol()
+        console.log(data)
+    }
   }
 }
 </script>

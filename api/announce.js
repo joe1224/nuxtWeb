@@ -1,13 +1,13 @@
-// import http from "../plugins/request.js"
+import http from "../plugins/request.js"
 
-// //获取招聘公告、相关通知、聘用公示列表
-// export function GetGovlist(params) {
-//   return http({
-//     url: '/web/gov/notice/list',
-//     method: 'get',
-//     params: params
-//   })
-// }
+//获取用户协议
+export function GetUserProtocol(params) {
+  return http({
+    url: '/v3/user/get-user-protocol',
+    method: 'get',
+    params
+  })
+}
 
 // //添加公告
 // export function GovSubmit(params) {
