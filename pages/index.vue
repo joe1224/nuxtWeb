@@ -23,29 +23,28 @@
           GitHub
         </a>
       </div>
-    </div> -->
+    </div>-->
   </div>
 </template>
 
 <script>
-import {GetUserProtocol} from '~/api/announce.js'
+import { GetUserProtocol } from '~/api/announce.js'
 export default {
-  layout:'default',
-  created(){
-    console.log(process.env.baseURL)
+  layout: 'default',
+  created() {
     this.getUserList()
   },
-  methods:{
-    async getUserList(){
-        const {data} = await GetUserProtocol()
-        console.log(data)
+  asyncData: {},
+  methods: {
+    async getUserList() {
+      const { data } = await GetUserProtocol()
     }
   }
 }
 </script>
 
 <style  lang="scss" scoped>
-.box{
+.box {
   color: $theme;
 }
 .container {
@@ -58,16 +57,8 @@ export default {
 }
 
 .title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;

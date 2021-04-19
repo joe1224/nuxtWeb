@@ -2,7 +2,7 @@ module.exports = {
   // dev环境
   dev: {
     NODE_ENV: 'dev',
-    BASE_API: 'https://ctms-dev.haioupai.com/'
+    BASE_API: 'https://ctms-test.haioupai.com/'
   },
   // test环境
   test: {
